@@ -104,13 +104,33 @@ header {
 
 .info {
     height: var(--info-height);
-    padding: 140px 200px;
+    padding: 80px 250px 200px;
     background-color: rgb(57, 56, 56);
     position: relative;
     top: calc(var(--header-height) + var(--nav-height));
 }
 
-.content {
+.info .down-arrow {
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.down-arrow img {
+    height: 30px;
+    animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+.info .content {
     height: var(--info-height);
     background-color: red;
 }
