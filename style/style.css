@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'FreeMono', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --header-height: 720px;
+    --nav-height: 80px;
+    --info-height: 2000px;
+}
+
+nav {
+    height: var(--nav-height);
+    background-color: rgb(57, 56, 56);
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+nav #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: var(--nav-height);
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#buttons .button {
+    margin-right: 70px;
+}
+
+header {
+    width: 100%;
+    height: var(--header-height);
+    position: fixed;
+    top: 80px;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-height);
+    width: 100%;
+}
+
+#left-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    background-color: rgb(20, 77, 142);
+    z-index: 1;
+}
+
+.basic-info {
+    width: 80%;
+    height: fit-content;
+    color: white;
+    font-size: 70px; /* relativo al cursorChar dell'auto type */
+}
+
+.basic-info .name {
+    width: fit-content;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.basic-info .introduction {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: left;
+}
+
+#right-cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(28, 45, 100);
+}
+
+.my-image {
+    width: 350px;
+    height: auto;
+}
+
+.info {
+    height: var(--info-height);
+    padding: 140px 200px;
+    background-color: rgb(57, 56, 56);
+    position: relative;
+    top: calc(var(--header-height) + var(--nav-height));
+}
+
+.content {
+    height: var(--info-height);
+    background-color: red;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(28, 45, 100);
+    position: relative;
+    top: calc(var(--header-height) + var(--nav-height));
+}
+
+footer .footer-info {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+}
