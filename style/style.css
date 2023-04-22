@@ -102,7 +102,7 @@ header {
     height: auto;
 }
 
-.info {
+#info {
     height: var(--info-height);
     padding: 80px 250px 200px;
     background-color: rgb(57, 56, 56);
@@ -110,7 +110,7 @@ header {
     top: calc(var(--header-height) + var(--nav-height));
 }
 
-.info .down-arrow {
+#info .down-arrow {
     display: flex;
     padding-bottom: 30px;
     justify-content: center;
@@ -128,9 +128,9 @@ header {
     50% {
       transform: translateY(-30px);
     }
-  }
+}
 
-.info .content {
+#content {
     height: var(--info-height);
     background-color: red;
 }
