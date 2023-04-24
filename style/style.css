@@ -139,13 +139,15 @@ header {
 }
 
 #down-arrow {
+    position: relative;
     display: flex;
-    padding-bottom: 30px;
+    margin-bottom: 13px;
     justify-content: center;
+    top: -10px;
 }
 
 #down-arrow img {
-    height: 30px;
+    height: 40px;
     animation: MoveUpDown 1.25s ease-in-out infinite;
 }
 
@@ -175,4 +177,20 @@ footer .footer-info {
     color: white;
     text-align: center;
     padding-top: 35px;
+}
+
+.back-to-top {
+    text-decoration: none;
+    padding: 5px;
+    background: #000;
+    border-radius: 100px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    margin-right: 50px;
+}
+
+.back-to-top img {
+    height: 50px;
 }
