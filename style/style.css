@@ -34,10 +34,11 @@ html {
 nav {
     height: var(--nav-height);
     background-color: #333;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
     position: fixed;
     overflow: hidden;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav #buttons {
@@ -137,8 +138,10 @@ header {
     height: var(--info-height);
     padding: 80px 250px 200px;
     background-color: #333;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
     position: relative;
     top: calc(var(--header-height) + var(--nav-height));
+    z-index: 1;
 }
 
 #down-arrow {
@@ -194,6 +197,8 @@ footer .footer-info {
     right: 50px;
     margin-top: 53vh;
     transition: linear 0.3s;
+
+    z-index: 1;
 }
 
 .back-to-top img {
