@@ -43,7 +43,7 @@ nav {
 nav #buttons {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-around;
     align-items: center;
     height: var(--nav-height);
     font-size: 20px;
@@ -55,14 +55,17 @@ nav a {
 }
 
 #buttons .button {
-    margin-right: 70px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 7px;
     word-spacing: -5px;
     transition: ease-out 0.3s;
 }
 
 #buttons .button:hover {
     transition: ease-out 0.3s;
-    transform: scale(1.1);
+    background: #585858;
+    border: 2px solid #404040;
 }
 
 header {
@@ -167,7 +170,7 @@ header {
 
 footer {
     height: 100px;
-    background-color: rgb(28, 45, 100);
+    background: linear-gradient(to right, #b21f1f, #1a2a6c, #111b43);
     position: relative;
     top: calc(var(--header-height) + var(--nav-height));
 }
@@ -182,15 +185,22 @@ footer .footer-info {
 .back-to-top {
     text-decoration: none;
     padding: 5px;
-    background: #000;
-    border-radius: 100px;
-
-    position: fixed;
+    background: #585858;
+    border-radius: 50%;
+    
+    position: sticky;
+    float: right;
     bottom: 30px;
-    right: 0;
-    margin-right: 50px;
+    right: 50px;
+    margin-top: 53vh;
+    transition: linear 0.3s;
 }
 
 .back-to-top img {
     height: 50px;
+}
+
+.back-to-top:hover {
+    background: #000;
+    transition: linear 0.3s;
 }
