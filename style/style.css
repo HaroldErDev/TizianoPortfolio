@@ -70,6 +70,7 @@ header {
     height: var(--header-height);
     position: fixed;
     top: 80px;
+    user-select: none;
 }
 
 #flex-container {
@@ -88,7 +89,7 @@ header {
     align-items: center;
     height: 100%;
     width: 60%;
-    background-color: rgb(20, 77, 142);
+    background: linear-gradient(to right, #b21f1f, #1a2a6c);
 }
 
 .basic-info {
@@ -119,12 +120,13 @@ header {
     align-items: end;
     height: 100%;
     width: 40%;
-    background-color: rgb(28, 45, 100);
+    background: linear-gradient(to right, #1a2a6c, #111b43);;
 }
 
 .my-image {
-    width: 350px;
-    height: auto;
+    position: relative;
+    width: 500px;
+    top: 300px;
     z-index: 1;
 }
 
@@ -144,7 +146,7 @@ header {
 
 #down-arrow img {
     height: 30px;
-    animation: MoveUpDown 1s linear infinite;
+    animation: MoveUpDown 1.25s ease-in-out infinite;
 }
 
 @keyframes MoveUpDown {
