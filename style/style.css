@@ -29,6 +29,7 @@ html {
     --header-height: 720px;
     --nav-height: 80px;
     --info-height: 2000px;
+    --courier: 'Courier New', Courier, monospace;
 }
 
 nav {
@@ -105,7 +106,7 @@ header {
 .basic-info .name {
     width: fit-content;
     font-size: 100px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--courier);
     text-align: left;
 }
 
@@ -164,9 +165,27 @@ header {
     }
 }
 
+.ref-link {
+    margin-top: -95px;
+    position: absolute;
+}
+
 #content {
     height: var(--info-height);
-    background-color: red;
+    color: white;
+    font-size: 25px;
+    /*background-color: red;*/
+}
+
+#content .title {
+    font-size: 50px;
+    font-family: var(--courier);
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+#content .description {
+    margin-bottom: 100px;
 }
 
 footer {
