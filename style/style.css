@@ -211,6 +211,11 @@ header {
     color: white;
 }
 
+.social .social-box img {
+    height: 50px;
+    margin-right: 10px;
+}
+
 footer {
     height: 100px;
     background: linear-gradient(to right, #b21f1f, #1a2a6c, #111b43);
