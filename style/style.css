@@ -3,7 +3,8 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    overflow: overlay;
+    overflow-y: overlay;
+    overflow-x: hidden;
 }
 
 html {
@@ -135,7 +136,7 @@ header {
 
 #info {
     height: var(--info-height);
-    padding: 80px 250px 200px;
+    padding: 20px 250px 200px;
     background-color: #333;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
     position: relative;
@@ -143,16 +144,16 @@ header {
     z-index: 1;
 }
 
-#down-arrow {
+#expand {
     position: relative;
     display: flex;
-    margin-bottom: 13px;
     justify-content: center;
-    top: -10px;
+    top: 15px;
 }
 
-#down-arrow img {
-    height: 40px;
+#expand #arrow-down {
+    font-size: 100px;
+    color: white;
     animation: MoveUpDown 1.25s ease-in-out infinite;
 }
 
@@ -176,11 +177,12 @@ header {
 }
 
 #content section {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     font-size: 22px;
 }
 
 #content .title {
+    text-align: center;
     font-size: 50px;
     letter-spacing: 5px;
     margin-bottom: 20px;
@@ -199,6 +201,10 @@ header {
     display: flex;
     justify-content: left;
     align-items: center;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 5px #888888;
 }
 
 .social .social-box #contacts {
@@ -209,6 +215,11 @@ header {
 .social .social-box a {
     text-decoration: none;
     color: white;
+    margin-right: 5px;
+}
+
+.social .social-box span {
+    margin-right: 5px;
 }
 
 .social .social-box img {
@@ -232,7 +243,8 @@ footer .footer-info {
 
 .back-to-top {
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
+    padding-bottom: 5px;
     background: #585858;
     border-radius: 50%;
     
@@ -241,16 +253,44 @@ footer .footer-info {
     bottom: 30px;
     right: 50px;
     margin-top: 53vh;
-    transition: linear 0.3s;
+    transition: linear 500ms;
 
     z-index: 1;
 }
 
-.back-to-top img {
-    height: 50px;
+.back-to-top #arrow-up {
+    color: white;
+    font-size: 30px;
 }
 
-.back-to-top:hover {
-    background: #000;
-    transition: linear 0.3s;
+.back-to-top .popup-message {
+    visibility: hidden;
+    width: 130px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -65px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    
+    position: absolute;
+    z-index: 1;
+
+    opacity: 0;
+    transform: scale(0.7);
+    transition: linear 150ms;
+}
+
+.back-to-top:hover .popup-message {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transition: linear 150ms;
+}
+
+.back-to-top:active {
+    background: #868686;
+    transition: linear 100ms;
 }
