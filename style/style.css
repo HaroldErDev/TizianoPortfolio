@@ -313,6 +313,10 @@ header {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 100px;
     background: var(--blue-light);
     position: relative;
@@ -322,8 +326,6 @@ footer {
 footer .footer-info {
     font-size: 30px;
     color: white;
-    text-align: center;
-    padding-top: 35px;
 }
 
 .back-to-top {
