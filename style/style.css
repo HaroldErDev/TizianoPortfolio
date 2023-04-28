@@ -3,7 +3,7 @@
 :root {
     --header-height: 720px;
     --nav-height: 80px;
-    --info-height: 2000px;
+    --info-height: 3000px;
     --blue-dark: #1f242d;
     --blue-light: #282f3a;
     --violet-dark: rgb(73, 44, 131);
@@ -195,6 +195,7 @@ header {
 }
 
 #expand #arrow-down {
+    font-weight: 600;
     font-size: 100px;
     color: white;
     animation: MoveUpDown 1.25s ease-in-out infinite;
@@ -269,6 +270,16 @@ header {
 .social .social-box img {
     height: 50px;
     margin-right: 10px;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.tools img {
+    height: 100px;
 }
 
 .languages {
