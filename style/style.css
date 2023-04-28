@@ -302,7 +302,7 @@ header {
     margin-left: -100px;
     margin-bottom: 10px;
     background-color: white;
-    color: black;
+    color: var(--blue-dark);
     text-align: center;
     border-radius: 4px;
     
@@ -334,17 +334,24 @@ footer .footer-info {
     text-decoration: none;
     padding: 10px;
     padding-bottom: 5px;
-    background: var(--violet-dark);
+    background-color: var(--violet-dark);
     border-radius: 50%;
-    
+    opacity: 0;
+    pointer-events: none;
+
     position: sticky;
     float: right;
     bottom: 30px;
     right: 50px;
     margin-top: 63vh;
-    transition: linear 500ms;
+    transition: opacity 300ms;
 
     z-index: 1;
+}
+
+.back-to-top.active {
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .back-to-top #arrow-up {
@@ -360,7 +367,7 @@ footer .footer-info {
     margin-left: -65px;
     margin-bottom: 10px;
     background-color: white;
-    color: black;
+    color: var(--blue-dark);
     text-align: center;
     border-radius: 4px;
     
@@ -377,9 +384,4 @@ footer .footer-info {
     opacity: 1;
     transform: scale(1);
     transition: linear 150ms;
-}
-
-.back-to-top:active {
-    background: var(--violet-light);
-    transition: linear 100ms;
 }
