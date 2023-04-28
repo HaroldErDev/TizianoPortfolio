@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+:root {
+    --header-height: 720px;
+    --nav-height: 80px;
+    --info-height: 2000px;
+    --blue-dark: #1f242d;
+    --blue-light: #282f3a;
+    --violet-dark: rgb(73, 44, 131);
+    --violet-light: rgb(100, 60, 180);
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -20,24 +30,18 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #777;
+    background-color: var(--violet-dark);
     border-radius: 1000px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #a09f9f;
-}
-
-:root {
-    --header-height: 720px;
-    --nav-height: 80px;
-    --info-height: 2000px;
+    background-color: var(--violet-light);
 }
 
 nav {
     height: var(--nav-height);
-    background-color: #333;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--blue-dark);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     position: fixed;
     overflow: hidden;
     width: 100%;
@@ -56,12 +60,17 @@ nav #buttons {
 nav a {
     color: white;
     text-decoration: none;
+    transition: 300ms ease-in-out;
+}
+
+nav a:hover {
+    color: var(--violet-light);
 }
 
 #buttons .button::after {
     content: '';
     display: block;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid var(--violet-light);
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
 }
@@ -94,8 +103,7 @@ header {
     align-items: center;
     height: 100%;
     width: 60%;
-    /*background: linear-gradient(to right, #b21f1f, #1a2a6c);*/
-    background: #1f242d;
+    background: var(--blue-light);
 }
 
 .basic-info {
@@ -129,11 +137,11 @@ header {
     color: white;
     font-size: 22px;
     padding: 12px 28px;
-    background: rgb(73, 44, 131);
+    background: var(--violet-dark);
     width: fit-content;
     border-radius: 6px;
     border: 3px solid transparent;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
     font-weight: 600;
     transition: 500ms ease;
@@ -145,8 +153,8 @@ header {
 }
 
 .download-CV:hover {
-    border-color: rgb(100, 60, 180);
-    color: rgb(100, 60, 180);
+    border-color: var(--violet-light);
+    color: var(--violet-light);
     background: transparent;
 }
 
@@ -157,8 +165,7 @@ header {
     align-items: end;
     height: 100%;
     width: 40%;
-    /*background: linear-gradient(to right, #1a2a6c, #111b43);*/
-    background: #1f242d;
+    background: var(--blue-light);
 }
 
 .my-image {
@@ -171,8 +178,8 @@ header {
 #info {
     height: var(--info-height);
     padding: 20px 250px 200px;
-    background-color: #333;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--blue-dark);
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.5);
     position: relative;
     top: calc(var(--header-height) + var(--nav-height));
     z-index: 1;
@@ -236,10 +243,10 @@ header {
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 5px;
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 0 5px #888888;
+    padding: 12px 20px;
+    border: 4px solid var(--violet-light);
+    border-radius: 50px;
+    background: var(--violet-dark);
 }
 
 .social .social-box #contacts {
@@ -307,7 +314,7 @@ header {
 
 footer {
     height: 100px;
-    background: #1f242d;
+    background: var(--blue-light);
     position: relative;
     top: calc(var(--header-height) + var(--nav-height));
 }
@@ -323,7 +330,7 @@ footer .footer-info {
     text-decoration: none;
     padding: 10px;
     padding-bottom: 5px;
-    background: #585858;
+    background: var(--violet-dark);
     border-radius: 50%;
     
     position: sticky;
@@ -369,6 +376,6 @@ footer .footer-info {
 }
 
 .back-to-top:active {
-    background: #868686;
+    background: var(--violet-light);
     transition: linear 100ms;
 }
