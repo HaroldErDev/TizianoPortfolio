@@ -113,8 +113,38 @@ header {
 
 .basic-info .introduction {
     margin-top: 10px;
+    margin-bottom: 50px;
     font-size: 25px;
     text-align: left;
+}
+
+.download-CV {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 12px 28px;
+    background: rgb(73, 44, 131);
+    width: fit-content;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 500ms ease;
+}
+
+.download-CV #download-icon {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.download-CV:hover {
+    background: rgb(84, 51, 150);
 }
 
 #right-cell {
