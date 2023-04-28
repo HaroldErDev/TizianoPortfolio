@@ -58,9 +58,11 @@ nav #buttons {
 }
 
 nav a {
+    font-weight: 600;
     color: white;
     text-decoration: none;
     transition: 300ms ease-in-out;
+    letter-spacing: 1px;
 }
 
 nav a:hover {
