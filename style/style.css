@@ -275,7 +275,19 @@ header {
 .tools {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+.tools a {
+    padding: 20px;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    transition: linear 100ms;
+}
+
+.tools a:hover {
+    border: 3px solid #191d25;
+    background-color: var(--blue-light);
 }
 
 .tools img {
