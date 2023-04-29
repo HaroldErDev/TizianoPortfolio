@@ -237,6 +237,10 @@ header {
     margin-bottom: 50px;
 }
 
+#content .description a {
+    color: var(--violet-light);
+}
+
 .social {
     display: flex;
     justify-content: space-evenly;
@@ -294,6 +298,19 @@ header {
     height: 100px;
 }
 
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-top: 50px;
+}
+
+.projects .project {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
 .languages {
     margin-top: 60px;
     display: flex;
@@ -319,13 +336,14 @@ header {
 
 .languages .len-box .flag .language {
     visibility: hidden;
-    width: 100%;
+    width: 196px;
     bottom: 100%;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -101px;
     margin-bottom: 10px;
-    background-color: white;
-    color: var(--blue-dark);
+    background-color: var(--violet-dark);
+    border: 3px solid var(--violet-light);
+    color: white;
     text-align: center;
     border-radius: 4px;
     
@@ -390,7 +408,7 @@ footer .footer-info {
     margin-left: -65px;
     margin-bottom: 10px;
     background-color: white;
-    color: var(--blue-dark);
+    color: black;
     text-align: center;
     border-radius: 4px;
     
