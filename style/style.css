@@ -314,13 +314,12 @@ header {
 
     width: 650px;
     height: 500px;
-    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: var(--blue-light);
     margin: 20px;
 }
 
 .project .proj-image {
-    border-radius: 8px 8px 0px 0px;
     height: 350px;
     width: 650px;
 }
@@ -340,7 +339,7 @@ header {
 .project .proj-ref {
     text-decoration: none;
     color: white;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 10px 20px;
     background: var(--violet-dark);
     transition: linear 200ms;
