@@ -283,10 +283,13 @@ header {
 }
 
 .tools a {
+    text-decoration: none;
     padding: 20px;
+    padding-bottom: 10px;
     border: 3px solid transparent;
     border-radius: 6px;
     transition: linear 100ms;
+    height: fit-content;
 }
 
 .tools a:hover {
