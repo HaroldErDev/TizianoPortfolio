@@ -3,7 +3,7 @@
 :root {
     --header-height: 720px;
     --nav-height: 80px;
-    --info-height: 3000px;
+    --info-height: 4000px;
     --blue-dark: #1f242d;
     --blue-light: #282f3a;
     --violet-dark: rgb(73, 44, 131);
@@ -300,15 +300,54 @@ header {
 
 .projects {
     display: flex;
-    justify-content: space-between;
-    align-items: left;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .projects .project {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 10px;
+
+    width: 650px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: var(--blue-light);
+    margin: 20px;
+}
+
+.project .proj-image {
+    border-radius: 8px 8px 0px 0px;
+    height: 350px;
+    width: 650px;
+}
+
+.project .proj-spec {
+   text-align: center;
+}
+
+.project .proj-spec .proj-name {
+    font-weight: 600;
+}
+
+.project .proj-spec .proj-desc {
+    font-size: 18px;
+}
+
+.project .proj-ref {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: var(--violet-dark);
+    transition: linear 200ms;
+}
+
+.project .proj-ref:hover {
+    background: var(--violet-light);
 }
 
 .languages {
