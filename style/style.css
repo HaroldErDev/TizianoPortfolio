@@ -237,6 +237,10 @@ header {
     margin-bottom: 50px;
 }
 
+#content .description .list {
+    text-align: left;
+}
+
 #content .description a {
     color: var(--violet-light);
 }
