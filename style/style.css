@@ -3,7 +3,7 @@
 :root {
     --header-height: 720px;
     --nav-height: 80px;
-    --info-height: 4000px;
+    --info-height: auto;
     --blue-dark: #1f242d;
     --blue-light: #282f3a;
     --violet-dark: rgb(73, 44, 131);
@@ -179,7 +179,7 @@ header {
 
 #info {
     height: var(--info-height);
-    padding: 20px 250px 200px;
+    padding: 20px 250px 20px;
     background-color: var(--blue-dark);
     box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -296,7 +296,7 @@ header {
     padding: 15px;
     background: var(--blue-light);
     border-radius: 3px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid #191d25e1;
 }
 
 .tools .dev-tool .bar {
@@ -375,6 +375,46 @@ header {
 
 .project .proj-ref:hover {
     background: var(--violet-light);
+}
+
+.formations {
+    display: flex;
+    gap: 39px;
+    align-items: center;
+
+    width: 100%;
+}
+
+.formations .education {
+    display: flex;
+    justify-content: top;
+    align-items: left;
+    flex-direction: column;
+
+    height: auto;
+    width: 478px;
+    padding: 30px;
+    margin: 20px;
+    background-color: var(--blue-light);
+    border: 2px solid #191d25e1;
+}
+
+.education .educ-year {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.education .educ-title {
+    font-weight: 600;
+}
+
+.education .educ-place {
+    color: rgb(132, 132, 132);
+}
+
+.education .educ-desc {
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 .languages {
