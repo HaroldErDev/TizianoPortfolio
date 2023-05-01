@@ -286,22 +286,43 @@ header {
     margin-top: 30px;
 }
 
-.tools a {
+.tools .dev-tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: fit-content;
+    padding: 15px;
+    background: var(--blue-light);
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tools .dev-tool .bar {
+    height: 14px;
+    background: rgb(62, 76, 92);
+    width: 100px;
+    border-radius: 3px;
+    border: 2px solid #191d25e1;
+}
+
+.tools .dev-tool .bar .bar-perc {
+    height: 14px;
+    background: var(--violet-light);
+    border-radius: 3px;
+}
+
+.tools .dev-tool .val {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.tools .dev-tool a {
     text-decoration: none;
-    padding: 20px;
-    padding-bottom: 10px;
-    border: 3px solid transparent;
-    border-radius: 6px;
-    transition: linear 100ms;
-    height: fit-content;
 }
 
-.tools a:hover {
-    border: 3px solid #191d25;
-    background-color: var(--blue-light);
-}
-
-.tools img {
+.tools .dev-tool a img {
     height: 100px;
 }
 
