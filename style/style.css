@@ -456,6 +456,10 @@ footer .footer-info {
     z-index: 1;
 }
 
+.back-to-top:hover {
+    background-color: var(--violet-light);
+}
+
 .back-to-top.active {
     pointer-events: auto;
     opacity: 1;
