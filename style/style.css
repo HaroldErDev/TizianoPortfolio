@@ -329,9 +329,16 @@ header {
 
 .projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
+    overflow-x: scroll;
+    gap: 80px;
+
+    padding: 20px;
+    margin-top: 50px;
+    scroll-behavior: smooth;
+}
+
+.projects::-webkit-scrollbar {
+    display: none;
 }
 
 .projects .project {
@@ -345,7 +352,6 @@ header {
     height: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: var(--blue-light);
-    margin: 20px;
 }
 
 .project .proj-image {
@@ -376,6 +382,43 @@ header {
 
 .project .proj-ref:hover {
     background: var(--violet-light);
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 20px;
+    user-select: none;
+}
+
+.slider-nav #arrow-left {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.slider-nav #arrow-right {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.slider-nav #arrow-left:hover {
+    color: var(--violet-light);
+    font-weight: 600;
+}
+
+.slider-nav #arrow-right:hover {
+    color: var(--violet-light);
+    font-weight: 600;
+}
+
+.slider-nav .pos {
+    cursor: normal;
+    position: relative;
+    font-size: 15px;
+    top: 17px;
+    font-variation-settings: 'FILL' 1;
 }
 
 .formations {

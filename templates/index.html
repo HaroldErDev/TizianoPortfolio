@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Tiziano Tinari</title>
 </head>
 <body>
     <nav>
         <div id="buttons">
             <a class="button" href="#chiSono">Chi Sono</a>
+            <a class="button" href="#istruzione">Istruzione E Formazione</a>
             <a class="button" href="#esperienze">Esperienze Lavorative</a>
             <a class="button" href="#competenze">Competenze Tecniche</a>
             <a class="button" href="#progetti">Progetti</a>
-            <a class="button" href="#istruzione">Istruzione E Formazione</a>
             <a class="button" href="#lingue">Lingue</a>
         </div>
     </nav>
@@ -94,6 +94,38 @@
                     <div class="social-box">
                         <img src="/images/GitHub-Icon.jpg" />
                         <a href="https://github.com/HaroldErDev" target="_blank" rel="noreferrer noopener">HaroldErDev</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="ref-link" id="istruzione"></div>
+            <section>
+                <div class="title"><b>Istruzione E Formazione</b></div>
+                <div class="description">
+                    Per quanto riguarda l'università, sono prima andato per 1 anno
+                    (2018 - 2019) all'università Sapienza di Roma a studiare per
+                    il corso di Matematica... successivamente mi sono poi trasferito
+                    all'università di Roma Tre al corso di Ingegneria Informatica,
+                    partendo direttamente dal secondo anno di studi.
+                </div>
+                <div class="formations">
+                    <div class="education" style="flex-grow:0">
+                        <span class="educ-year">2019 - 2023</span>
+                        <span class="educ-title">Laurea Triennale In Ingegneria Informatica</span>
+                        <span class="educ-place">UNIVERSITÀ DEGLI STUDI ROMA TRE</span>
+                        <div class="educ-desc">
+                            <div class="vote"><b>Voto di Laurea: </b>105/110</div>
+                            <div class="thesis"><b>Tesi di Laurea: </b>"Progettazione E Implementazione Di Un Sistema Documentale Personalizzato Basato Su Alfresco"</div>
+                        </div>
+                    </div>
+                    <div class="education" style="flex-grow:1">
+                        <span class="educ-year">2013 - 2018</span>
+                        <span class="educ-title">Diploma Di Istruzione Secondaria Superiore Di Liceo Scientifico</span>
+                        <span class="educ-place">IIS PIAZZA DELLA RESISTENZA - SEDE VIA TIRSO</span>
+                        <div class="educ-desc">
+                            <div class="vote"><b>Voto: </b>79/100</div>
+                            <div class="thesis"><b>Tesina di Maturità: </b>"Probabilità E Giochi Di Carte"</div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -247,37 +279,12 @@
                         <a class="proj-ref" href="https://github.com/OlekasndrPoddubnyy/Progetto_di_Gruppo_SIW" target="_blank" rel="noreferrer noopener">Codice</a>
                     </div>
                 </div>
-            </section>
-
-            <div class="ref-link" id="istruzione"></div>
-            <section>
-                <div class="title"><b>Istruzione E Formazione</b></div>
-                <div class="description">
-                    Per quanto riguarda l'università, sono prima andato per 1 anno
-                    (2018 - 2019) all'università Sapienza di Roma a studiare per
-                    il corso di Matematica... successivamente mi sono poi trasferito
-                    all'università di Roma Tre al corso di Ingegneria Informatica,
-                    partendo direttamente dal secondo anno di studi.
-                </div>
-                <div class="formations">
-                    <div class="education" style="flex-grow:0">
-                        <span class="educ-year">2019 - 2023</span>
-                        <span class="educ-title">Laurea Triennale In Ingegneria Informatica</span>
-                        <span class="educ-place">UNIVERSITÀ DEGLI STUDI ROMA TRE</span>
-                        <div class="educ-desc">
-                            <div class="vote"><b>Voto di Laurea: </b>105/110</div>
-                            <div class="thesis"><b>Tesi di Laurea: </b>"Progettazione E Implementazione Di Un Sistema Documentale Personalizzato Basato Su Alfresco"</div>
-                        </div>
-                    </div>
-                    <div class="education" style="flex-grow:1">
-                        <span class="educ-year">2013 - 2018</span>
-                        <span class="educ-title">Diploma Di Istruzione Secondaria Superiore Di Liceo Scientifico</span>
-                        <span class="educ-place">IIS PIAZZA DELLA RESISTENZA - SEDE VIA TIRSO</span>
-                        <div class="educ-desc">
-                            <div class="vote"><b>Voto: </b>79/100</div>
-                            <div class="thesis"><b>Tesina di Maturità: </b>"Probabilità E Giochi Di Carte"</div>
-                        </div>
-                    </div>
+                <div class="slider-nav">
+                    <span class="material-symbols-outlined slider-arrow" id="arrow-left">navigate_before</span>
+                    <span class="material-symbols-outlined pos" id="radio1">radio_button_unchecked</span>
+                    <span class="material-symbols-outlined pos" id="radio2">radio_button_unchecked</span>
+                    <span class="material-symbols-outlined pos" id="radio3">radio_button_unchecked</span>
+                    <span class="material-symbols-outlined slider-arrow" id="arrow-right">navigate_next</span>
                 </div>
             </section>
 
@@ -316,5 +323,6 @@
     </a>
 
     <script src="/scripts/scrollToTop.js"></script>
+    <script src="/scripts/scrollSlider.js"></script>
 </body>
 </html>
