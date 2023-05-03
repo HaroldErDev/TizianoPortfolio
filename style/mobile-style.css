@@ -1,0 +1,126 @@
+@media screen and (max-width: 1000px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 1;
+    }
+
+    nav::before {
+        content: 'Portfolio';
+        display: block;
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    nav #buttons {
+        display: none;
+    }
+
+    .basic-info .name {
+        font-size: 80px;
+    }
+
+    .basic-info .introduction {
+        font-size: 20px;
+    }
+
+    .download-CV {
+        font-size: 18px;
+    }
+
+    #info {
+        padding: 20px 20px 20px;
+    }
+
+    #content section {
+        font-size: 18px;
+    }
+
+    #content .title {
+        font-size: 38px;
+    }
+
+    .social {
+        flex-wrap: wrap;
+    }
+
+    .social .social-box {
+        padding: 5px 10px;
+        margin-bottom: 20px;
+    }
+
+    .social .social-box #contacts {
+        font-size: 35px;
+    }
+
+    .social .social-box img {
+        height: 35px;
+    }
+
+    .formations {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .tools .dev-tool {
+        margin-bottom: 20px;
+    }
+
+    .tools .dev-tool a img {
+        height: 50px;
+    }
+
+    .projects {
+        overflow-x: unset;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .projects .project {
+        width: 450px;
+        height: auto;
+    }
+
+    .project .proj-image {
+        width: 450px;
+        height: 250px;
+    }
+
+    .project .proj-ref {
+        padding: 5px 10px;
+        margin-bottom: 15px;
+    }
+
+    .slider-nav {
+        display: none;
+    }
+
+    .languages .len-box {
+        font-size: 20px;
+    }
+
+    .languages .len-box .flag img {
+        height: 100px;
+    }
+
+    .languages .len-box .flag .language {
+        width: 130px;
+        margin-left: -68px;
+        font-size: 15px;
+    }
+
+    footer .footer-info {
+        font-size: 25px;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        margin-top: 68vh;
+    }
+}
